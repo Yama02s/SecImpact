@@ -1,0 +1,20 @@
+[package]
+name = "secimpact"
+version = "0.3.0"
+description = "SecImpact - Matriz de impacto y gestión de riesgos de ciberseguridad"
+authors = ["Meraav (Yama02s)"]
+license = "MIT"
+edition = "2021"
+
+[lib]
+name = "secimpact_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }

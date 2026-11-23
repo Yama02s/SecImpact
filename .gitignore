@@ -1,0 +1,31 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Node & Build
+node_modules
+dist
+dist-ssr
+*.local
+
+# Rust / Tauri
+src-tauri/target
+src-tauri/Cargo.lock
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# Local audits / test data
+tmp/
+test-data/
+*.secimpact.json
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+Thumbs.db
